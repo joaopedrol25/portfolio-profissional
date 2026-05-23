@@ -1,0 +1,9 @@
+services:
+  portfolio-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-react-app
+    ports:
+      - "80:80"
+    restart: unless-stopped
